@@ -1,0 +1,51 @@
+.to{
+    font-style: italic;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px blue,2px 2px 2px greenyellow;  
+    /* margin-left: 40%;   */
+}
+.bg{
+    background-color: cadetblue;
+    height: 50px;
+    width: 300px;
+    /* margin: 100px; */
+}
+.back{
+   justify-items: center;
+   margin-top: 200px;
+}
+.bg1{
+    background-color: rgb(115, 167, 167);
+    height: 200px;
+    width: 300px;
+}
+
+
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    color: deeppink;
+    font-weight: bold;
+}
+.del{
+    background-color: aqua;
+    border-radius: 6px;
+    padding: 4px;
+    border-color: aqua;
+}
+.sub{
+    background-color: aqua;
+    border-radius: 6px;
+    padding: 4px;
+    border-color: aqua;
+}
+#input{
+    border-radius: 10px;
+    padding: 10px;
+    border: ridge;
+    border-color: blue;
+}

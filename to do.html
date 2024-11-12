@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="back">
+                <div class="bg">
+                    <center><strong class="to">TO DO LIST</strong></center>
+                </div>
+                <div class="bg1">
+                    <center><input type="text" placeholder="TASK" id="input">
+                        <button onclick="change1()" class="sub">SUBMIT</button>
+                    </center>
+                    <div id="mydiv"></div>
+                    <script>
+                        
+                        function change1() {
+                            const input = document.getElementById("input").value; 
+                            const para = document.createElement("p");
+                            para.className = "task"; 
+                            para.innerHTML =input+"<button class='del' onclick=kannan(event)>DELETE</button>";
+                            const div = document.getElementById("mydiv");
+                            div.append(para);
+           
+                        }
+                
+                        function kannan(event) {
+                            event.target.parentElement.remove()
+                        }
+
+                    </script>
+                </div>
+            </div> 
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
